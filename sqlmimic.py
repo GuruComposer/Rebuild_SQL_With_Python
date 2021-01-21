@@ -72,11 +72,10 @@ class SQLInMemory:
 
 class SQLOnDisk:
     def __init__(self):
-        self.SQLInMemory = SQLInMemory()
         self.result = None
 
     def select(self, fields):
-        sql = self.SQLInMemory.select(fields)
+        sql = SQLInMemory().select(fields)
         self.result = sql
         with open("Journal.csv", "w") as new_file:
 
@@ -86,7 +85,7 @@ class SQLOnDisk:
                 new_file.write(str(item) + ",\n")
 
     def fromm(self, tables):
-        sql = self.SQLInMemory.fromm(tables)
+        sql = SQLInMemory().fromm(tables)
         self.result = sql
         with open("Journal.csv", "w") as new_file:
 
@@ -96,7 +95,7 @@ class SQLOnDisk:
                 new_file.write(str(item) + ",\n")
 
     def where(self, dictionary):
-        sql = self.SQLInMemory.where(dictionary)
+        sql = SQLInMemory().where(dictionary)
         self.result = sql
         with open("Journal.csv", "w") as new_file:
 
@@ -106,7 +105,7 @@ class SQLOnDisk:
                 new_file.write(str(item) + ",\n")
 
 
-# Tests
+Tests
 sql = SQLInMemory()
 print(sql.select(fields=["name", "rating"]))
 print()
