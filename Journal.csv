@@ -1,2 +1,15 @@
-{'name': 'El Celler de Can Roca', 'country': 'Spain', 'rating': '3'},
-{'name': 'Asador Etxebarri', 'country': 'Spain', 'rating': '3'},
+id,name,country
+1,Eleven Madison Park,USA
+2,Osteria Francescana,Italy
+3,El Celler de Can Roca,Spain
+4,Mirazur,France
+5,Central,Peru
+6,Asador Etxebarri,Spain
+7,Gaggan,Thailand
+8,Maido,Peru
+9,Mugaritz,Spain
+10,Steirereck,Austria
+name
+Eleven Madison Park,Osteria Francescana,El Celler de Can Roca,Mirazur,Central,Asador Etxebarri,Gaggan,Maido,Mugaritz,Steirereck
+country
+USA,Italy,Spain,France,Peru,Spain,Thailand,Peru,Spain,Austria
